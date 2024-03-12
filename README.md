@@ -12,9 +12,10 @@ _стартер буду дорабатывать по мере понимая, 
 
 ```astro
 <SEOHead
-			noManifest
-		/>
+  noManifest
+/>
 ```
+
 **Также в astro.config.mjs - убираешь vite**
 
 ```mjs

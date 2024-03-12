@@ -6,7 +6,36 @@ _стартер буду дорабатывать по мере понимая, 
 
 - в settings.ts
 
-## Для создания иконок из 1024x1024 используй сервис
+## Если не хочешь manifest в проекте
+
+**Это в /layouts/MainLayout.astro**
+
+```astro
+<SEOHead
+			noManifest
+		/>
+```
+**Также в astro.config.mjs - убираешь vite**
+
+```mjs
+	vite: {
+		plugins: [
+			VitePWA({
+				registerType: "autoUpdate",
+				manifest,
+				workbox: {
+					globDirectory: "dist",
+					globPatterns: [
+						"**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico}",
+					],
+					navigateFallback: null,
+				},
+			}),
+		],
+	},
+```
+
+## Для создания иконок для PWA из 1024x1024 используй сервис
 
 - [favycon.vercel.app](https://favycon.vercel.app/)
 

@@ -2,6 +2,15 @@
 
 _стартер буду дорабатывать по мере понимая, чего нужно или чего убрать._
 
+## Пакеты
+
+- astro 4.5
+- tailwind (+ @tailwindcss/typography')
+- sitemap
+- rss
+- astro-compress
+- PWA
+
 ## Необходимые настройки
 
 - в settings.ts
@@ -40,15 +49,6 @@ _стартер буду дорабатывать по мере понимая, 
 
 - [favycon.vercel.app](https://favycon.vercel.app/)
 
-## Пакеты
-
-- astro 4.5
-- tailwind (+ @tailwindcss/typography')
-- sitemap
-- rss
-- astro-compress
-- PWA
-
 ## Content Collection
 
 Если **draft: true**, то НЕ будет в конечном итоге в сборке.
@@ -68,9 +68,7 @@ const items = defineCollection({
 })
 ```
 
-**/content/items/item.md**
-
-## В папках
+## Структура проекта
 
 ```md
 ├── astro.config.mjs

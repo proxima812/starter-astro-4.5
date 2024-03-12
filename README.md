@@ -1,6 +1,6 @@
 # astro starter 4.5 minimal
 
-*стартер буду дорабатывать по мере понимая, чего нужно или чего убрать.*
+_стартер буду дорабатывать по мере понимая, чего нужно или чего убрать._
 
 ## Необходимые настройки
 
@@ -13,7 +13,7 @@
 ## Пакеты
 
 - astro 4.5
-- tailwind
+- tailwind (+ @tailwindcss/typography')
 - sitemap
 - rss
 - astro-compress
@@ -79,4 +79,3 @@ const items = defineCollection({
 ├── tailwind.config.mjs
 └── tsconfig.json
 ```
-# starter-astro-4.5

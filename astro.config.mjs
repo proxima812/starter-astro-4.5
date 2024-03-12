@@ -9,7 +9,6 @@ import { config } from "/src/settings"
 // https://astro.build/config
 export default defineConfig({
   site: `${config.site.base.url}`,
-  compressHTML: false,
 	prefetch: {
 		prefetchAll: true,
 		defaultStrategy: "viewport",
